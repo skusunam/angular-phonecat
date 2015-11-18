@@ -9,4 +9,11 @@ phonecatServices.factory('Phone', ['$resource',
     return $resource('phones/:phoneId.json', {}, {
       query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
     });
+
+  // function($resource){
+  //   return $resource('http://onboardingexercise2.azurewebsites.net/api/v1/products', {}, {
+  //     query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
+  //   });
+
+
   }]);
